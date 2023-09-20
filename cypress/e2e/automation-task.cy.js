@@ -61,6 +61,7 @@ describe("Test Automation", () => {
     });
 
     // Check that all jobs' Department contains “Quality Assurance”, and Location contains “Istanbul, Turkey”
+    // Click the “View Role” button and check that this action redirects us to the Lever Application form page
 
     cy.get('[data-team="qualityassurance"]')
       .its("length")
@@ -74,23 +75,12 @@ describe("Test Automation", () => {
             "have.text",
             "Quality Assurance"
           );
+          cy.get(`#jobs-list > div:nth-child(${index}) > div > a`)
+            .should("have.attr", "href")
+            .and("include", "https://jobs.lever.co/");
+          cy.get(`#jobs-list > div:nth-child(${index}) > div > a`).click();
         }
       });
-
-    // Click the “View Role” button and check that this action redirects us to the Lever Application form page
-
-    cy.xpath(
-      '//body/section[@id="career-position-list"]/div[1]/div[1]/div[2]/div[1]/div[1]'
-    ).realHover({ position: "center" });
-    cy.xpath(
-      "//body[1]/section[3]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]"
-    ).should("be.visible");
-    cy.xpath("//body[1]/section[3]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]")
-      .should("have.attr", "href")
-      .and("include", "https://jobs.lever.co/");
-    cy.xpath(
-      "//body[1]/section[3]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]"
-    ).click();
   });
 
   it("Check sample FAILED CASE screenshot should be under the screenshot folder", () => {
