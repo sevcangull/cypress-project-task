@@ -15,7 +15,9 @@ npm install
 cd ./cypress-project
 # Open Cypress App
 ./node_modules/.bin/cypress open
-# Run automation-task.cy.js
+
+Run automation-task.cy.js
+```
 
 
 ## Running from the CLI
