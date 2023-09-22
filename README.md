@@ -1,6 +1,6 @@
 ## Overview
 
-- This repo is structured with Cypress
+- This repo is structured with Cypress.
 
 ## Installation
 
@@ -15,8 +15,9 @@ npm install
 cd ./cypress-project
 # Open Cypress App
 ./node_modules/.bin/cypress open
-
-Run automation-task.cy.js
+# Select E2E Testing
+# Select Electron and Start E2E Testing in Chrome
+# Run automation-task.cy.js
 ```
 
 
