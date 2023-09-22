@@ -33,6 +33,6 @@ npm run test:chrome
 npm run test:firefox
 ```
 
-There is an  sample FAILED case, you can find the failed test screenshot under the screenshots folder.
+There is an  sample FAILED case, you can find the failed test screenshot under the screenshots folder after runing all the tests.
 
 ![Tests Passes](image.png)
