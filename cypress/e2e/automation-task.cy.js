@@ -83,7 +83,7 @@ describe("Test Automation", () => {
       });
   });
 
-  it("Check sample FAILED CASE screenshot should be under the screenshot folder", () => {
+  it("Check sample FAILED CASE screenshot should be under the screenshot folder after runing all the tests", () => {
     cy.xpath(
       "//body[1]/section[3]/div[1]/div[1]/div[2]/div[1]/div[1]/a[1]"
     ).click();
