@@ -16,7 +16,7 @@ cd ./cypress-project
 # Open Cypress App
 ./node_modules/.bin/cypress open
 # Select E2E Testing
-# Select Electron and Start E2E Testing in Chrome
+# Select Electron and Start E2E Testing in Electron
 # Run automation-task.cy.js
 ```
 
